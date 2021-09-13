@@ -32,7 +32,6 @@ Following are the guideline that yall are supposed to follow to meet the expecta
 </details>
 
 <details>
-  <summary>Install the dependencies and start the local development server</summary>
   
   ```
   Go into the folder like: cd folderName
