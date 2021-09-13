@@ -34,8 +34,8 @@ Following are the guideline that yall are supposed to follow to meet the expecta
 <details>
   <summary>Replicate the UI provided here: https://bit.ly/3z5ZHIn </summary>
   
-  - [x] ```getData()``` which is responsible to get the data from the endpoint: https://jsonplaceholder.typicode.com/albums
-  - [x] ```deleteCard()``` which is responsible to removing an object from the state on the click of the button
+  - [x] For the logos in the cards, you can use any logos of your choice as long as you maintain the basic styling.
+  - [x] All the other data like fonts etc. is provided in figma.
   
 </details>
 
