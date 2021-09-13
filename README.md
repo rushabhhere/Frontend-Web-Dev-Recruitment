@@ -32,7 +32,7 @@ Following are the guideline that yall are supposed to follow to meet the expecta
 </details>
 
 <details>
-  <summary>Write the 2 basic functions that'll test your state management logic and API handling process in React. (Even if you aren't familiar with React, it doesn't matter. The basic code base is already done. You just have to complete 2 function - see the instructions nested)</summary>
+  <summary>Replicate the UI provided here: https://bit.ly/3z5ZHIn </summary>
   
   - [x] ```getData()``` which is responsible to get the data from the endpoint: https://jsonplaceholder.typicode.com/albums
   - [x] ```deleteCard()``` which is responsible to removing an object from the state on the click of the button
