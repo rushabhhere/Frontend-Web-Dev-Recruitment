@@ -1,0 +1,4 @@
+node_modules/
+
+# The complete tailwind config file for reference
+full-tailwind.config.js

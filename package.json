@@ -1,0 +1,23 @@
+{
+  "name": "frontend-web-dev-recruitment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss build -i src/tailwind-styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushabhhere/Frontend-Web-Dev-Recruitment.git"
+  },
+  "keywords": [],
+  "author": "Rushabh Javeri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushabhhere/Frontend-Web-Dev-Recruitment/issues"
+  },
+  "homepage": "https://github.com/rushabhhere/Frontend-Web-Dev-Recruitment#readme",
+  "devDependencies": {
+    "tailwindcss": "^2.2.15"
+  }
+}
