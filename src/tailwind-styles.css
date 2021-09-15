@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.job-card {
+  @apply bg-white relative px-8 pb-8 pt-12 rounded-md;
+}
+
+.company-image {
+  @apply absolute top-0 transform -translate-y-1/2;
+}
+
+.job-details {
+  @apply text-dim flex items-center;
+}
+
+.job-title {
+  @apply font-bold text-xl mt-3 mb-4;
+}
+
+.company-name {
+  @apply text-dim mb-6;
+}
+
+.job-locations {
+  @apply font-bold text-primary;
+}

@@ -12,34 +12,90 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="bg-body">
+    <!-- header -->
     <header
       class="
-        bg-indigo-500
+        bg-primary
         flex
         justify-between
         items-center
-        px-28
-        pt-7
-        pb-14
-        rounded-bl-85
+        md:px-28
+        px-5
+        py-7
+        md:pt-7 md:pb-14 md:rounded-bl-85
+        relative
+        overflow-hidden
       "
     >
-      <a href="#">
-        <img src="../assets/logo.svg" alt="" class="w-28" />
+      <!-- decorative triangles -->
+      <img
+        src="../assets/decoration/triangle.svg"
+        alt=""
+        class="
+          absolute
+          -left-28
+          top-2
+          w-72
+          z-0
+          transform
+          -rotate-35
+          hidden
+          md:block
+        "
+      />
+      <img
+        src="../assets/decoration/triangle.svg"
+        alt=""
+        class="
+          absolute
+          left-48
+          -top-52
+          w-72
+          z-0
+          transform
+          -rotate-35
+          hidden
+          md:block
+        "
+      />
+      <img
+        src="../assets/decoration/triangle.svg"
+        alt=""
+        class="
+          absolute
+          right-8
+          -top-20
+          w-72
+          z-0
+          transform
+          rotate-12
+          hidden
+          md:block
+        "
+      />
+
+      <!-- devjobs logo -->
+      <a href="#" class="z-10">
+        <img src="../assets/logo.svg" alt="" class="md:w-28 w-24" />
       </a>
 
-      <div class="theme-toggle flex">
+      <!-- theme toggler -->
+      <div class="flex z-10">
         <img src="../assets/icons/sun.svg" alt="light theme" class="mr-4 w-5" />
+
         <label
           for="theme-toggler"
-          class="block bg-indigo-200 w-12 h-6 p-1 rounded-full cursor-pointer"
+          class="block bg-white w-12 h-6 p-1 rounded-full cursor-pointer"
         >
-          <div class="relative w-full h-full">
-            <div class="w-4 h-4 bg-indigo-600 rounded-full absolute transform transition" id="theme-circle"></div>
-          </div>
+          <div
+            class="w-4 h-4 bg-primary rounded-full transform transition"
+            id="theme-circle"
+          ></div>
         </label>
+
         <img src="../assets/icons/moon.svg" alt="dark theme" class="ml-4 w-4" />
+
         <input
           type="checkbox"
           name="dark-mode"
@@ -48,5 +104,350 @@
         />
       </div>
     </header>
+
+    <!-- main -->
+    <main class="mt-20 md:mt-36 md:w-4/5 px-5 md:px-0 mx-auto">
+      <div
+        class="
+          mb-14
+          grid
+          lg:grid-cols-3
+          md:grid-cols-2
+          grid-cols-1
+          gap-y-16 gap-x-9
+        "
+      >
+        <!-- so digital card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/so-digital.svg"
+            alt=""
+            class="company-image"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">5h ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Full Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Senior Software Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">So Digital Inc.</div>
+
+          <!-- locations -->
+          <div class="job-locations">
+            Remote, Seoul, Tokyo, Mountain View, San Francisco
+          </div>
+        </div>
+
+        <!-- national wildlife card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/national-wildlife.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">20h ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Part Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Haskell and PureScript Dev</header>
+
+          <!-- company name -->
+          <div class="company-name">National Wildlife</div>
+
+          <!-- locations -->
+          <div class="job-locations">Columbus, OH</div>
+        </div>
+
+        <!-- photosnap card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/photosnap.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">1d ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Part Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Midlevel Back End Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">Photosnap Ltd.</div>
+
+          <!-- locations -->
+          <div class="job-locations">Russia</div>
+        </div>
+
+        <!-- extreme division card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/extreme-division.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">2d ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Full Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Senior Application Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">Extreme Division</div>
+
+          <!-- locations -->
+          <div class="job-locations">Anywhere</div>
+        </div>
+
+        <!-- multifold card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/multifold.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">2d ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Part Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Remote Devops Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">Multifold</div>
+
+          <!-- locations -->
+          <div class="job-locations">Berlin</div>
+        </div>
+
+        <!-- hardsoft computing card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/hardsoft-computing.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">4d ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Part Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Desktop Support Manager</header>
+
+          <!-- company name -->
+          <div class="company-name">Hardsoft Computing</div>
+
+          <!-- locations -->
+          <div class="job-locations">Columbus, OH</div>
+        </div>
+
+        <!-- blocksoft card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/blocksoft.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">1w ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Full Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">iOS Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">Blocksoft</div>
+
+          <!-- locations -->
+          <div class="job-locations">Columbus, OH</div>
+        </div>
+
+        <!-- color logic card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/color-logic.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">1w ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Full Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Senior EJB Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">Color Logic</div>
+
+          <!-- locations -->
+          <div class="job-locations">Toronto, Ontario - Remote</div>
+        </div>
+
+        <!-- outerwest international card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/outerwest-international.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">1w ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Part Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Senior Software Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">Outerwest International</div>
+
+          <!-- locations -->
+          <div class="job-locations">Sofia, Bulgaria</div>
+        </div>
+
+        <!-- almost yellow card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/almost-yellow.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">2w ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Freelance</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">App and Website Designer</header>
+
+          <!-- company name -->
+          <div class="company-name">Almost Yellow</div>
+
+          <!-- locations -->
+          <div class="job-locations">Dallas, Tx or Scottsdale, Az</div>
+        </div>
+
+        <!-- density card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/density.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">1mo ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Part Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Fullstack Developer</header>
+
+          <!-- company name -->
+          <div class="company-name">Density</div>
+
+          <!-- locations -->
+          <div class="job-locations">Remote, New York</div>
+        </div>
+
+        <!-- synoid card -->
+        <div class="job-card">
+          <!-- company logo -->
+          <img
+            src="../assets/company-logos/synoid-inc.svg"
+            alt=""
+            class="absolute top-0 transform -translate-y-1/2"
+          />
+
+          <!-- details -->
+          <div class="job-details">
+            <span class="mr-3">4d ago</span>
+            <div class="w-1 h-1 bg-dim rounded"></div>
+            <span class="ml-3">Part Time</span>
+          </div>
+
+          <!-- job title -->
+          <header class="job-title">Technical Lead Engineer</header>
+
+          <!-- company name -->
+          <div class="company-name">Synoid Inc.</div>
+
+          <!-- locations -->
+          <div class="job-locations">Remote, New York</div>
+        </div>
+      </div>
+
+      <div class="flex justify-center mb-28">
+        <button
+          class="
+            bg-primary
+            hover:bg-primary-light
+            px-7
+            py-4
+            cursor-pointer
+            text-white
+            font-bold
+            rounded
+          "
+        >
+          Load More
+        </button>
+      </div>
+    </main>
   </body>
 </html>
