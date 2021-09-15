@@ -19,8 +19,8 @@ if (themeToggler.checked) {
 }
 
 themeToggler.addEventListener('change', () => {
-  document.getElementById('theme-circle').classList.toggle('translate-x-6');
-  const togglerLabel = document.getElementById('theme-toggler-label');
+  togglerCircle.classList.toggle('translate-x-6');
+
   if (themeToggler.checked) {
     togglerLabel.style.backgroundColor = '#CACFFF';
     document.querySelector('html').classList.add('dark');
