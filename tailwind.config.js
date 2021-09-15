@@ -1,15 +1,22 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  mode: 'jit',
+  purge: ['./public/*.html', './public/*.js'],
+  darkMode: 'class',
   theme: {
     extend: {},
     colors: {
       white: '#FFFFFF',
       black: '#000000',
+
       primary: '#5964E0',
       'primary-light': '#6771E3',
       body: '#F4F6F8',
       dim: '#6E8098',
+
+      'dark-body': '#000972',
+      'dark-card': '#2737EE',
+      'dark-button-dim': '#5764f3',
+      'dark-dim': '#BFDAFF',
     },
     fontFamily: {
       sans: [

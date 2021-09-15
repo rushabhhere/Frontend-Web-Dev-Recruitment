@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>devjobs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -12,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
-  <body class="bg-body">
+  <body class="bg-body dark:bg-dark-body">
     <!-- header -->
     <header
       class="
@@ -86,7 +88,17 @@
 
         <label
           for="theme-toggler"
-          class="block bg-white w-12 h-6 p-1 rounded-full cursor-pointer"
+          class="
+            block
+            bg-white
+            w-12
+            h-6
+            p-1
+            rounded-full
+            cursor-pointer
+            transition
+          "
+          id="theme-toggler-label"
         >
           <div
             class="w-4 h-4 bg-primary rounded-full transform transition"
@@ -129,7 +141,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">5h ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Full Time</span>
           </div>
 
@@ -157,7 +169,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">20h ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Part Time</span>
           </div>
 
@@ -183,7 +195,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">1d ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Part Time</span>
           </div>
 
@@ -209,7 +221,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">2d ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Full Time</span>
           </div>
 
@@ -235,7 +247,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">2d ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Part Time</span>
           </div>
 
@@ -261,7 +273,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">4d ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Part Time</span>
           </div>
 
@@ -287,7 +299,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">1w ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Full Time</span>
           </div>
 
@@ -313,7 +325,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">1w ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Full Time</span>
           </div>
 
@@ -339,7 +351,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">1w ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Part Time</span>
           </div>
 
@@ -365,7 +377,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">2w ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Freelance</span>
           </div>
 
@@ -391,7 +403,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">1mo ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Part Time</span>
           </div>
 
@@ -417,7 +429,7 @@
           <!-- details -->
           <div class="job-details">
             <span class="mr-3">4d ago</span>
-            <div class="w-1 h-1 bg-dim rounded"></div>
+            <div class="circle"></div>
             <span class="ml-3">Part Time</span>
           </div>
 
@@ -436,7 +448,9 @@
         <button
           class="
             bg-primary
+            dark:bg-dark-card
             hover:bg-primary-light
+            dark:hover:bg-dark-button-dim
             px-7
             py-4
             cursor-pointer

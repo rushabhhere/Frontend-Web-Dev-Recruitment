@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .job-card {
-  @apply bg-white relative px-8 pb-8 pt-12 rounded-md;
+  @apply bg-white dark:bg-dark-card relative px-8 pb-8 pt-12 rounded-md transition;
 }
 
 .company-image {
@@ -11,17 +11,21 @@
 }
 
 .job-details {
-  @apply text-dim flex items-center;
+  @apply text-dim dark:text-dark-dim flex items-center;
 }
 
 .job-title {
-  @apply font-bold text-xl mt-3 mb-4;
+  @apply dark:text-white font-bold text-xl mt-3 mb-4;
 }
 
 .company-name {
-  @apply text-dim mb-6;
+  @apply text-dim dark:text-dark-dim mb-6;
 }
 
 .job-locations {
-  @apply font-bold text-primary;
+  @apply dark:text-white font-bold text-primary;
+}
+
+.circle {
+  @apply w-1 h-1 bg-dim dark:bg-dark-dim rounded;
 }
