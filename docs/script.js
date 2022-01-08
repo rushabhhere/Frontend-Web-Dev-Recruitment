@@ -34,7 +34,7 @@ themeToggler.addEventListener('change', () => {
   }
 });
 
-const companyLogos = '/assets/company-logos';
+const companyLogos = './assets/company-logos';
 
 // Storing card info
 const jobCards = [
