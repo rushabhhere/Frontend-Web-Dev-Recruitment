@@ -34,11 +34,13 @@ themeToggler.addEventListener('change', () => {
   }
 });
 
+const companyLogos = '/assets/company-logos';
+
 // Storing card info
 const jobCards = [
   {
     company: 'So Digital Inc.',
-    logo: '../assets/company-logos/so-digital.svg',
+    logo: `${companyLogos}/so-digital.svg`,
     postingTime: '5h ago',
     type: 'Full Time',
     title: 'Senior Software Engineer',
@@ -46,7 +48,7 @@ const jobCards = [
   },
   {
     company: 'National Wildlife',
-    logo: '../assets/company-logos/national-wildlife.svg',
+    logo: `${companyLogos}/national-wildlife.svg`,
     postingTime: '20h ago',
     type: 'Part Time',
     title: 'Haskell and PureScript Dev',
@@ -54,7 +56,7 @@ const jobCards = [
   },
   {
     company: 'Photosnap Ltd.',
-    logo: '../assets/company-logos/photosnap.svg',
+    logo: `${companyLogos}/photosnap.svg`,
     postingTime: '1d ago',
     type: 'Part Time',
     title: 'Midlevel Back End Engineer',
@@ -62,7 +64,7 @@ const jobCards = [
   },
   {
     company: 'Extreme Division',
-    logo: '../assets/company-logos/extreme-division.svg',
+    logo: `${companyLogos}/extreme-division.svg`,
     postingTime: '2d ago',
     type: 'Full Time',
     title: 'Senior Application Engineer',
@@ -70,7 +72,7 @@ const jobCards = [
   },
   {
     company: 'Multifold',
-    logo: '../assets/company-logos/multifold.svg',
+    logo: `${companyLogos}/multifold.svg`,
     postingTime: '2d ago',
     type: 'Part Time',
     title: 'Remote Devops Engineer',
@@ -78,7 +80,7 @@ const jobCards = [
   },
   {
     company: 'Hardsoft Computing',
-    logo: '../assets/company-logos/hardsoft-computing.svg',
+    logo: `${companyLogos}/hardsoft-computing.svg`,
     postingTime: '4d ago',
     type: 'Part Time',
     title: 'Desktop Support Manager',
@@ -86,7 +88,7 @@ const jobCards = [
   },
   {
     company: 'Blocksoft',
-    logo: '../assets/company-logos/blocksoft.svg',
+    logo: `${companyLogos}/blocksoft.svg`,
     postingTime: '1w ago',
     type: 'Full Time',
     title: 'iOS Engineer',
@@ -94,7 +96,7 @@ const jobCards = [
   },
   {
     company: 'Color Logic',
-    logo: '../assets/company-logos/color-logic.svg',
+    logo: `${companyLogos}/color-logic.svg`,
     postingTime: '1w ago',
     type: 'Full Time',
     title: 'Senior EJB Engineer',
@@ -102,7 +104,7 @@ const jobCards = [
   },
   {
     company: 'Outerwest International',
-    logo: '../assets/company-logos/outerwest-international.svg',
+    logo: `${companyLogos}/outerwest-international.svg`,
     postingTime: '1w ago',
     type: 'Part Time',
     title: 'Senior Software Engineer',
@@ -110,7 +112,7 @@ const jobCards = [
   },
   {
     company: 'Almost Yellow',
-    logo: '../assets/company-logos/almost-yellow.svg',
+    logo: `${companyLogos}/almost-yellow.svg`,
     postingTime: '2w ago',
     type: 'Full Time',
     title: 'App and Website Designer',
@@ -118,7 +120,7 @@ const jobCards = [
   },
   {
     company: 'Density',
-    logo: '../assets/company-logos/density.svg',
+    logo: `${companyLogos}/density.svg`,
     postingTime: '1mo ago',
     type: 'Part Time',
     title: 'Fullstack Developer',
@@ -126,7 +128,7 @@ const jobCards = [
   },
   {
     company: 'Synoid Inc.',
-    logo: '../assets/company-logos/synoid-inc.svg',
+    logo: `${companyLogos}/synoid-inc.svg`,
     postingTime: '4d ago',
     type: 'Part Time',
     title: 'Technical Lead Engineer',
