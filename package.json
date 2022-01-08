@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rushabhhere/Frontend-Web-Dev-Recruitment.git"
+    "url": "git+https://github.com/rushabhhere/gdsc-web-dev-phase-2.git"
   },
   "keywords": [],
   "author": "Rushabh Javeri",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rushabhhere/Frontend-Web-Dev-Recruitment/issues"
+    "url": "https://github.com/rushabhhere/gdsc-web-dev-phase-2/issues"
   },
-  "homepage": "https://github.com/rushabhhere/Frontend-Web-Dev-Recruitment#readme",
+  "homepage": "https://github.com/rushabhhere/gdsc-web-dev-phase-2#readme",
   "devDependencies": {
     "tailwindcss": "^2.2.15"
   }
